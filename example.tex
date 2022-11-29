@@ -1,0 +1,113 @@
+% !TeX encoding = UTF-8
+% !TeX program = xelatex
+% !TeX spellcheck = en_US
+
+\documentclass{cjc}
+
+\usepackage{booktabs}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{siunitx}
+\usepackage{lipsum}
+
+\classsetup{
+  % 配置里面不要出现空行
+  title        = {lipsum},
+  title*       = {Title},
+  journal      = {Lorem Ipsum},
+  authors      = {
+    author1 = {
+      name         = {lipsum},
+      name*        = {lipsum},
+      affiliations = {lipsum},
+      biography    = {},
+      % 英文作者介绍内容包括：出生年, 学位(或目前学历), 职称, 主要研究领域(与中文作者介绍中的研究方向一致).
+      biography*   = {},
+      email        = {lipsum},
+      %phone-number = {},  % 第1作者手机号码(投稿时必须提供，以便紧急联系，发表时会删除)
+    },
+  },
+  % 论文定稿后，作者署名、单位无特殊情况不能变更。若变更，须提交签章申请，
+  % 国家名为中国可以不写，省会城市不写省的名称，其他国家必须写国家名。
+  affiliations = {
+    aff1 = {
+      name  = {lipsum，lipsum，lipsum},
+      name* = {lipsum},
+    },
+  },
+  abstract     = {
+    \lipsum[5]
+  },
+  abstract*    = {},
+  % 中文关键字与英文关键字对应且一致，应有5-7个关键词，不要用英文缩写
+  keywords     = {lipsum},
+  keywords*    = {},
+  grants       = {
+    % 本课题得到……基金中文完整名称(No.项目号)、
+    % ……基金中文完整名称(No.项目号)、
+    % ……基金中文完整名称(No.项目号)资助.
+  },
+  % clc           = {TP393},
+  % doi           = {10.11897/SP.J.1016.2020.00001},  % 投稿时不提供DOI号
+  % received-date = {2019-08-10},  % 收稿日期
+  % revised-date  = {2019-10-19},  % 最终修改稿收到日期，投稿时不填写此项
+  % publish-date  = {2020-03-16},  % 出版日期
+  % page          = 512,
+}
+
+\newcommand\dif{\mathop{}\!\mathrm{d}}
+
+% hyperref 总是在导言区的最后加载
+\usepackage{hyperref}
+
+
+
+\begin{document}
+
+\maketitle
+\lipsum[1]
+
+\lipsum[2]
+
+\lipsum[3]
+
+
+
+\begin{acknowledgments}
+
+\end{acknowledgments}
+
+
+\nocite{*}
+
+\bibliographystyle{cjc}
+\bibliography{example}
+
+
+\end{document}
+
+% \begin{figure}[htb]
+%   \centering
+%   \includegraphics[width=\linewidth]{example-fig.pdf}
+%   \caption{图片说明 *字体为小 5 号，图片应为黑白图，图中的子图要有子图说明*}
+% \end{figure}
+
+% \begin{table}[htb]
+%   \centering
+%   \caption{表说明}
+%   \small
+%   \begin{tabular}{cc}
+%     \toprule
+%     示例表格 & 第一行为表头，表头要有内容 \\
+%     \midrule
+%              & \\
+%     \midrule
+%              & \\
+%     \bottomrule
+%   \end{tabular}
+% \end{table}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
